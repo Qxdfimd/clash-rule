@@ -6,9 +6,9 @@ mixed-port: 7890 # HTTP(S) 和 SOCKS 代理混合端口
 # tproxy-port: 7894
 
 allow-lan: true # 允许局域网连接
-bind-address: "*" # 绑定 IP 地址，仅作用于 allow-lan 为 true，'*'表示所有地址
+bind-address: '*' # 绑定 IP 地址，仅作用于 allow-lan 为 true，'*'表示所有地址
 authentication: # http,socks 入口的验证用户名，密码
-  - "Qxdfimd:100225lmx"
+  - 'Qxdfimd:100225lmx'
 skip-auth-prefixes: # 设置跳过验证的 IP 段
   - 127.0.0.1/8
   - ::1/128
@@ -25,10 +25,10 @@ geodata-mode: true
 
 #自定义 geodata url
 geox-url:
-  geoip: "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.dat"
-  geosite: "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.dat"
-  mmdb: "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/country.mmdb"
-  asn: "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/GeoLite2-ASN.mmdb"
+  geoip: 'https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.dat'
+  geosite: 'https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.dat'
+  mmdb: 'https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/country.mmdb'
+  asn: 'https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/GeoLite2-ASN.mmdb'
 
 geo-auto-update: true # 是否自动更新 geodata
 geo-update-interval: 24 # 更新间隔，单位：小时
@@ -48,8 +48,8 @@ log-level: warning # 日志等级 silent/error/warning/info/debug
 
 ipv6: true # 开启 IPv6 总开关，关闭阻断所有 IPv6 链接和屏蔽 DNS 请求 AAAA 记录
 
-external-controller: "0.0.0.0:9090" # RESTful API 监听地址
-secret: "100225lmx" # `Authorization:Bearer ${secret}`
+external-controller: '0.0.0.0:9090' # RESTful API 监听地址
+secret: '100225lmx' # `Authorization:Bearer ${secret}`
 
 tcp-concurrent: true # TCP 并发连接所有 IP, 将使用最快握手的 TCP
 
