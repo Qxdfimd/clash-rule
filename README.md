@@ -17,5 +17,5 @@ https://raw.githubusercontent.com/Qxdfimd/clash-rule/refs/heads/main/lite.ini
 
 ## 基础版  
 无分流  
-绕过FCM,OneDrive，代理Bing  
+绕过FCM，OneDrive，代理Bing  
 https://raw.githubusercontent.com/Qxdfimd/clash-rule/refs/heads/main/base.ini  
