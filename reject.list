@@ -1,2 +1,1 @@
-AND,((NETWORK,udp),(DST-PORT,443))
 GEOSITE,category-ads-all
