@@ -148,11 +148,13 @@ dns:
     - dhcp://en0
   # 专用于节点域名解析的 DNS 服务器，非必要配置项，如果不填则遵循nameserver-policy、nameserver和fallback的配置
   proxy-server-nameserver:
-    - https://doh.pub/dns-query
-    - tls://dot.pub
+    - https://dns.pub/dns-query
+    - tls://dns.pub
 #host
 hosts:
   '*.clash.dev': 127.0.0.1
   'alpha.clash.dev': '::1'
-  dns.google: [8.8.8.8,2001:4860:4860::8888,8.8.4.4,2001:4860:4860::8844]
-  doh.pub: google.com
+  dns.google: [2001:4860:4860::8888, 8.8.8.8, 2001:4860:4860::8844, 8.8.4.4]
+  cloudflare-dns.com: [2606:4700:4700::1111, 1.1.1.1, 2606:4700:4700::1001, 1.0.0.1]
+  dns.pub: [2402:4e00::, 119.29.29.29, 2402:4e00:1::, 119.28.28.28]
+  dns.alidns.com: [2400:3200::1, 223.5.5.5, 2400:3200::2, 223.6.6.6]
